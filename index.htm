@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="main">
+        <div class="box">
+
+            <form id="tempCalc" onsubmit="calctemp(); return false">
+                <label for=""><h2>Temperature Converter</h2></label><br>
+                <input type="number" name="Temparature" id="temp" placeholder="Enter Temperature"><br>
+                <select name="Temparature" id="T2">
+                    <!-- <option value="Temparature">Tempareture Type</option> -->
+                    <option value="cel">Celcius</option>
+                    <option value="fah">Faureinheit</option>
+                    <option value="kel">Kelvin</option>
+                    
+                </select>
+                <p>To</p>
+                <select name="Temperature2" id="T3">
+                    <!-- <option value="Temparature">Tempareture Type</option> -->
+                    <option value="cel2">Celcius</option>
+                    <option value="fah2">Faureinheit</option>
+                    <option value="kel2">Kelvin</option>
+                    
+                </select>
+                <input type="submit" name="Convert" class="btn" ><br>
+                <span id="res">Result is:</span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
